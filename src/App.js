@@ -1,5 +1,5 @@
 import React, {
-	useEffect,
+
 	useState
 } from 'react';
 import axios from 'axios';
@@ -8,12 +8,7 @@ export default function App() {
 	const [desc, setDesc] = useState('');
 	const [url, setUrl] = useState('');
 	const [loading, setLoading] = useState(false);
-	// useEffect(
-	// 	() => {
-	// 		console.log(desc);
-	// 	},
-	// 	[desc]
-	// );
+
 
 	const onClickHandler = () => {
 		const newPrompt = {
@@ -45,7 +40,7 @@ export default function App() {
 			}}>
 			<div
 				class="input-group mb-3"
-				style={{ width: 500 }}>
+				style={{ width: 300 }}>
 				<input
 					type="text"
 					class="form-control"
@@ -70,8 +65,8 @@ export default function App() {
 						src={url}
 						alt="Ai"
 						style={{
-							width: '500px',
-							height: '500px'
+							width: '300px',
+							height: '300px'
 						}}
 					/>}
 			</div>
